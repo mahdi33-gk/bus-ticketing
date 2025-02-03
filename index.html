@@ -39,6 +39,7 @@
                         primaryBg: 'rgba(29, 209, 0, 0.1);',
                         grayColor: 'rgba(3, 7, 18, 0.6);',
                         paribahanBg: 'rgb(247, 248, 248)',
+                        btnBg: 'rgba(3, 7, 18, 0.05)'
                     },
                     fontFamily: {
                         railway: 'Raleway',
@@ -153,7 +154,7 @@
 
         <!-- cupon/best offer section start -->
         <section class="w-10/12 mt-20 mx-auto">
-            <h1 class="text-center font-bold text-4xl mb-8">Best offers for you</h1>
+            <h1 class="text-center font-extrabold text-4xl mb-8">Best offers for you</h1>
 
             <div class="flex justify-evenly mx-auto">
                 <div class="flex justify-between rounded-2xl  items-center gap-7 w-[553px] bg-new15Color">
@@ -191,9 +192,66 @@
 
 
         <!-- seat section start -->
-         <section class="max-w-full mt-14 mx-auto border-t-4 rounded-3xl border-primary">
-            <h1 class="text-center">hey</h1>
-         </section>
+        <section class="max-w-full mt-14 mx-auto border-t-4 rounded-3xl bg-paribahanBg border-primary">
+
+
+            <div class="mt-16 w-10/12 mx-auto">
+                <h1 class="text-4xl font-semibold text-center">Deen Paribohon</h1>
+                <p class="text-center mt-5">Yes, you can run unit tests and view the results directly within the app.
+                    The integrated <br>testing features allow for a streamlined .</p>
+
+                <!-- Deen pribahan card1 -->
+                <div class="grid grid-cols-3 p-4 px-5 mt-8 bg-base-100 rounded-2xl justify-center">
+                    <div class="col-span-2">
+                        <div class="flex justify-between px-3 mt-2">
+                            <div class="flex gap-2">
+                                <div> <img src="/images/bus-logo.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-black font-semibold text-3xl">Deen Paribohon</h1>
+                                    <p>Coach-009-WEB ! AC_Business</p>
+                                </div>
+
+                            </div>
+                            <div>
+                                <button class="btn text-primary bg-primaryBg">
+                                    <img class="border-dashed border-2" src="/images/seat-green.png" alt=""> 40 seats
+                                    left
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- timing and details -->
+                        <div class="bg-paribahanBg p-5 rounded-2xl">
+                            <div class="flex mt-5 justify-between pb-3 border-b-2 border-dashed">
+                                <p>Route</p>
+                                <p class="text-black font-semibold">Dhaka to Sylhet</p>
+                            </div>
+
+                            <div class="flex justify-between pb-3 mt-5 border-b-2 border-dashed">
+                                <p>Departure Time</p>
+                                <p class="text-black font-semibold">9:00 PM</p>
+                            </div>
+
+                            <div class="flex justify-between mb-3  mt-8">
+                                <button class="btn btnBg">Boarding Point - Laxmipur</button>
+                                <button class="btn btnBg">Dropping Point - Bogura</button>
+                                <button class="btn btnBg">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center pl-3">
+                        <div class="flex flex-col justify-center border-l-4  border-primary border-dashed pl-3  items-center">
+                            <img class="border-2 border-dashed" src="/images/fare.png" alt="">
+                            <p class="text-center font-railway"><span class="font-railway font-bold text-3xl">550 Taka</span>
+                               <br> Per Seat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div></div>
+            </div>
+        </section>
         <!-- seat section end -->
 
 
