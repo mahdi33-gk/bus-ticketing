@@ -39,7 +39,9 @@
                         primaryBg: 'rgba(29, 209, 0, 0.1)',
                         grayColor: 'rgba(3, 7, 18, 0.6)',
                         paribahanBg: 'rgb(247, 248, 248)',
-                        btnBg: 'rgba(3, 7, 18, 0.05)'
+                        btnBg: 'rgba(3, 7, 18, 0.05)',
+                        textCl: 'rgba(3, 7, 18, 0.5)'
+                        
                     },
                     fontFamily: {
                         railway: 'Raleway',
@@ -192,7 +194,7 @@
 
 
         <!-- seat section start -->
-        <section class="max-w-full mt-14 mx-auto border-t-4 rounded-3xl bg-paribahanBg border-primary">
+        <section class="max-w-full mt-14 mx-auto border-t-4 rounded-3xl bg-paribahanBg border-primary ">
 
 
             <div class="mt-16 w-10/12 mx-auto">
@@ -234,9 +236,9 @@
                             </div>
 
                             <div class="flex justify-between mb-3  mt-8">
-                                <button class="btn btnBg">Boarding Point - Laxmipur</button>
-                                <button class="btn btnBg">Dropping Point - Bogura</button>
-                                <button class="btn btnBg">Est. Time - 11 Hour</button>
+                                <button class="btn btnBg rounded-lg">Boarding Point - Laxmipur</button>
+                                <button class="btn btnBg rounded-lg">Dropping Point - Bogura</button>
+                                <button class="btn btnBg rounded-lg">Est. Time - 11 Hour</button>
                             </div>
                         </div>
                     </div>
@@ -265,24 +267,27 @@
                 <div class="grid grid-cols-10 bg-base-100 justify-center rounded-3xl">
                     <div class="col-span-6 ">
 
-                        <div class="p-5 ">
+                        <div class="p-5  ">
                             <h1 class="text-2xl font-semibold font-railway pb-3 border-b-2 border-dashed ">Select Your
                                 Seat</h1>
-                            <div class="border-b-2 border-dashed">
+                            <div class="border-b-2  border-dashed">
                                 <div class="flex justify-between  pb-2 pt-2 ">
-                                    <p class="flex items-center"><img class="mr-1 " src="./images/seat-gray.png" alt="">
+                                    <p class="flex items-center"><img class="mr-1 border-2 border-dashed " src="./images/seat-gray.png" alt="">
                                         Available</p>
-                                    <p class=" flex items-center font-bold"><img class="mr-1 "
+                                    <p class=" flex items-center font-bold"><img class="mr-1 border-2 border-dashed"
                                             src="./images/seat-green-filled.png" alt=""> Selected</p>
                                 </div>
                             </div>
 
 
                             <!-- seats -->
-                             <div class="grid grid-cols-6 font-inter justify-between">
-                                <div class="col-span-4 grid grid-cols-5 gap-x-8 gap-y-5 justify-between">
+                             <div class="flex justify-ceter mt-6 ml-[589px] absolute">
+                                <button disabled class="w-28 btn "> <img class="w-8" src="./images/wheel.png" alt=""></button>
+                            </div>
+                             <div class="grid grid-cols-5 mt-[90px] font-inter justify-between">
+                                <div class="col-span-3 grid grid-cols-5 gap-x-8 gap-y-5 justify-between">
                                     
-                                    <div class="col-span-1 flex flex-col gap-y-7">
+                                    <div class="col-span-1 mt-4 text-textCl flex flex-col gap-y-11">
                                         <p>A</p>
                                         <p>B</p>
                                         <p>C</p>
@@ -294,74 +299,93 @@
                                         <p>I</p>
                                         <p>J</p>
                                     </div>
-                                    <div class="col-span-1 -ml-12 flex flex-col gap-y-5">
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
+                                    <div class="col-span-1 -ml-12 flex flex-col gap-y-5 ">
+                                        <button class="btn hover:text-white hover:bg-black text-textCl w-28">A1</button>
+                                        <button class="btn hover:text-white hover:bg-black text-textCl w-28">A1</button>
+                                        <button class="btn hover:text-white hover:bg-black text-textCl w-28">A1</button>
+                                        <button class="btn hover:text-white hover:bg-black text-textCl w-28">A1</button>
+                                        <button class="btn hover:text-white hover:bg-black text-textCl w-28">A1</button>
+                                        <button class="btn hover:text-white hover:bg-black text-textCl w-28">A1</button>
+                                        <button class="btn hover:text-white hover:bg-black text-textCl w-28">A1</button>
+                                        <button class="btn hover:text-white hover:bg-black text-textCl w-28">A1</button>
+                                        <button class="btn hover:text-white hover:bg-black text-textCl w-28">A1</button>
+                                        <button class="btn hover:text-white hover:bg-black text-textCl w-28">A1</button>
+                                        
+                                        
                                         
                                     </div>
-                                    <div class="col-span-1 flex flex-col gap-y-5">
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
+                                    <div class="col-span-1 text-textCl flex flex-col gap-y-5">
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        
+                                        
                                         
                                     </div>
                                     
                                     
                                   
                                 </div>
-                                <div class="col-span-2  grid grid-cols-2 gap-x-8 gap-y-5 justify-between">
+                                <div class="col-span-2 text-textCl  grid grid-cols-2 gap-x-8 gap-y-5 justify-between">
                                     <div class="col-span-1 flex flex-col gap-y-5">
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl  w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl  w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl  w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl  w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl  w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl  w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl  w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl  w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl  w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl  w-28">A1</button>
+                                        
+                                        
                                         
                                     </div>
                                     <div class="col-span-1  flex flex-col gap-y-5">
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
-                                        <button class="btn w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        <button class="btn hover:bg-black hover:text-white text-textCl w-28">A1</button>
+                                        
+                                        
                                         
                                     </div>
                                 </div>
                                 
                              </div>
-                             <div></div>
+                             
                             
                         </div>
 
                     </div>
                     <!-- price and input section -->
-                    <div class="col-span-4 ">
-                        <h1>price</h1>
+                    <div class="col-span-4 p-5">
+                        <div>
+                            <div>
+                                <h1 class="border-b-2 pb-3 border-dashed text-2xl font-semibold">Select Your Seat</h1>
+
+                                <div class="bg-paribahanBg mt-5 rounded-lg">
+                                    <h1>different</h1>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
 
                     </div>
                 </div>
