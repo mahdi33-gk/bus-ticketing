@@ -3,4 +3,6 @@ document.getElementById('seat').addEventListener('click',function(event){
 })
 
 const displayMinusSeats = document.getElementById('show-seat').innerText;
-const displayMainSeats = parseFloat(displayMinusSeats);
+const displayMainlittleSeats = parseFloat(displayMinusSeats);
+const displaybigSeats = document.getElementById('main-seats').innerText;
+const displayMainbigSeats = parseFloat(displayMainbigSeats);
