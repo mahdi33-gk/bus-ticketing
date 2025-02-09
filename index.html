@@ -217,8 +217,9 @@
 
                             </div>
                             <div>
-                                <button  class="btn text-primary bg-primaryBg">
-                                    <img class="border-dashed border-2" src="./images/seat-green.png" alt=""><span id="main-seats"> 40</span> seats
+                                <button class="btn text-primary bg-primaryBg">
+                                    <img class="border-dashed border-2" src="./images/seat-green.png" alt=""><span
+                                        id="main-seats"> 40</span> seats
                                     left
                                 </button>
                             </div>
@@ -303,7 +304,8 @@
                                         <p>J</p>
                                     </div>
                                     <div class="col-span-1 -ml-12 flex flex-col gap-y-5 ">
-                                        <button id="seat" class="btn hover:text-white hover:bg-black text-textCl w-28 ">A1</button>
+                                        <button id="seat"
+                                            class="btn hover:text-white hover:bg-black text-textCl w-28 ">A1</button>
                                         <button class="btn hover:text-white hover:bg-black text-textCl w-28">B1</button>
                                         <button class="btn hover:text-white hover:bg-black text-textCl w-28">C1</button>
                                         <button class="btn hover:text-white hover:bg-black text-textCl w-28">D1</button>
@@ -420,7 +422,7 @@
                                         <p>BDT:***</p>
                                     </div>
 
-                                    
+
 
 
                                 </div>
@@ -428,13 +430,30 @@
                             <div>
                                 <div>
                                     <h1 class="text-lg font-medium mb-1">Passenger Name*</h1>
-                                    <input placeholder="Type Name" class="w-full border-2 mb-3 border-textBg rounded-md p-3" type="text">
-                                    <h1 class="text-lg font-medium mb-1" >Phone Number*</h1>
-                                    <input placeholder="Your Phone Number" class="w-full border-2 mb-3 border-textBg rounded-md p-3" required type="text">
+                                    <input placeholder="Type Name"
+                                        class="w-full border-2 mb-3 border-textBg rounded-md p-3" type="text">
+                                    <h1 class="text-lg font-medium mb-1">Phone Number*</h1>
+                                    <input placeholder="Your Phone Number"
+                                        class="w-full border-2 mb-3 border-textBg rounded-md p-3" required type="text">
                                     <h1 class="text-lg font-medium mb-1">Email ID</h1>
-                                    <input class="w-full border-2 border-textBg rounded-md p-3 mb-3" placeholder="Your Email" type="email">
+                                    <input class="w-full border-2 border-textBg rounded-md p-3 mb-3"
+                                        placeholder="Your Email" type="email">
 
                                     <button disabled class="btn w-full mt-3">Next</button>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+                                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                        <div class="modal-box">
+                                            <h3 class="text-lg font-bold">Hello!</h3>
+                                            <p class="py-4">Press ESC key or click the button below to close</p>
+                                            <div class="modal-action">
+                                                <form method="dialog">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn">Close</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </dialog>
                                     <div class="mt-3 justify-evenly flex ">
                                         <a class="underline text-grayColor" href="">Terms and Conditions</a>
                                         <a class="underline text-grayColor" href="">Cancellation Policy</a>
@@ -459,31 +478,32 @@
 
 
     <footer class="footer bg-footerColor p-12">
-            <div class="flex justify-between mt-8 mx-auto w-10/12 border-b-2 border-dashed pb-12 border-gray-700">
-                <div>
-                    <h1 class="text-white text-4xl font-bold">O-ticket</h1>
-                    <p class="text-footertextCl text-[14px] mt-4 font-inter">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
-                </div>
-                <div>
-                    <h1 class="font-railway text-white text-[17px]">Download our app</h1>
-                    <div class="flex gap-3 border-2 border-footertextCl mt-3 rounded-md px-2 p-1 ">
-                        <div>
-                            <img class="border-2 opacity-80 border-dashed" src="./images/playstore.png" alt="">
-                        </div>
-                        <div class="text-footertextCl">
-                            <h1 class="text-[13px]">Get it on</h1>
-                            <h1 class="text-white text-[17px]">Google Play</h1>
-                        </div>
+        <div class="flex justify-between mt-8 mx-auto w-10/12 border-b-2 border-dashed pb-12 border-gray-700">
+            <div>
+                <h1 class="text-white text-4xl font-bold">O-ticket</h1>
+                <p class="text-footertextCl text-[14px] mt-4 font-inter">P-Ticket is a digital platform to make your
+                    <br> daily commuting better.</p>
+            </div>
+            <div>
+                <h1 class="font-railway text-white text-[17px]">Download our app</h1>
+                <div class="flex gap-3 border-2 border-footertextCl mt-3 rounded-md px-2 p-1 ">
+                    <div>
+                        <img class="border-2 opacity-80 border-dashed" src="./images/playstore.png" alt="">
+                    </div>
+                    <div class="text-footertextCl">
+                        <h1 class="text-[13px]">Get it on</h1>
+                        <h1 class="text-white text-[17px]">Google Play</h1>
                     </div>
                 </div>
-                
             </div>
 
-            <!-- second step -->
+        </div>
 
-            
-        
-          <!-- <div class="w-10/12 mx-auto">
+        <!-- second step -->
+
+
+
+        <!-- <div class="w-10/12 mx-auto">
             <p class="text-footertextCl">
                 @all rights reserved, O-Ticket services limited.2026
               </p>
@@ -501,9 +521,9 @@
                 </a>
               </div>
           </div> -->
-        
-      </footer>
-      <footer class="bg-footerColor">
+
+    </footer>
+    <footer class="bg-footerColor">
         <div class="text-[14px] flex justify-between   mx-auto w-10/12 px-12 pb-12 ">
             <div>
                 <p class="text-footertextCl">@all rights reserved, P-Ticket services limited.2024</p>
@@ -514,7 +534,7 @@
                 <a href="">Privacy policy</a>
             </div>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>
