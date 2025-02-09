@@ -3,12 +3,20 @@ function allInOne(event){
     document.getElementById('noSeatText').classList.add('hidden');
     const priceAddSection = document.getElementById('seatAdd');
     let priceContainer = document.getElementById('price-container');
-    priceContainer.classList.add('flex', 'justify-between');
-    priceContainer.innerHTML = `
-    <p>${event.innerText} </p>
-    <p>Economy</p>
-    <p>550</p>
+    priceContainer.classList.add('flex', 'items-center', 'flex-col');
+
+    let li = document.createElement('li');
+    li.classList.add('flex', 'justify-between', 'w-full');
+
+    li.innerHTML = `
+    <span> ${event.innerText}</span>
+    <span>Economy</span>
+    <span>550</span>
     `
+
+    
+    priceContainer.appendChild(li);
+    
    
 
     event.classList.add('bg-secondary', 'text-white');
