@@ -411,7 +411,10 @@
                                     </div>
                                     <div class="mx-auto w-[440px] border-b-2 border-dashed px-5"></div>
                                     <div class="mt-2 mb-3 pb-3 border-b-2 mx-auto w-[440px]">
-                                        <h1 class="text-center text-3xl text-red-500  ">No seat booked</h1>
+                                        <h1 id="noSeatText" class="text-center text-3xl text-red-500  ">No seat booked</h1>
+                                        <div id="seatAdd">
+
+                                        </div>
                                     </div>
                                     <div class="font-semibold px-3 py-1 flex justify-between">
                                         <p>Total Price</p>
@@ -446,9 +449,9 @@
                                     <input class="w-full border-2 border-textBg rounded-md p-3 mb-3"
                                         placeholder="Your Email" type="email">
 
-                                    <button disabled class="btn w-full mt-3">Next</button>
+                                    <button onclick="my_modal_5.showModal()" class="btn w-full mt-3 bg-secondary text-white">Next</button>
                                     <!-- Open the modal using ID.showModal() method -->
-                                    <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+                                    
                                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                                         <div class="modal-box flex justify-center items-center flex-col font-roboto py-4">
                                             <img class="py-3" src="./images/success.png" alt="">
@@ -459,7 +462,7 @@
                                             <div class="modal-action">
                                                 <form method="dialog">
                                                     <!-- if there is a button in form, it will close the modal -->
-                                                    <button class="btn btn-lg rounded-full bg-modalColor px-12 py-1 text-white">Close</button>
+                                                    <button class="btn btn-lg rounded-full bg-secondary px-12 py-1 text-white">Close</button>
                                                 </form>
                                             </div>
                                         </div>
