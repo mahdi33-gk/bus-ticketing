@@ -2,13 +2,14 @@ function allInOne(event){
 
     document.getElementById('noSeatText').classList.add('hidden');
     const priceAddSection = document.getElementById('seatAdd');
-    const div = document.createElement('div');
-    div.innerHTML = `
+    let priceContainer = document.getElementById('price-container');
+    priceContainer.classList.add('flex', 'justify-between');
+    priceContainer.innerHTML = `
     <p>${event.innerText} </p>
     <p>Economy</p>
     <p>550</p>
     `
-    priceAddSection.appendChild('div');
+   
 
     event.classList.add('bg-secondary', 'text-white');
     const oldAvailableSeat = parseFloat(document.getElementById('main-seats').innerText);
