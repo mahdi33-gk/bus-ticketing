@@ -70,4 +70,19 @@ document.getElementById("cupon-apply-btn").addEventListener('click', function ()
         grandprice = totalPrice - totalPrice * .20;
     }
     grandPrice.innerText = grandprice.toFixed(2);
+    const cuponDiv = document.getElementById('cupon-apply-field');
+    console.log(cuponDiv);
+    cuponDiv.classList.add('hidden');
+
+    const discountCountainer = document.getElementById('discount');
+    const p = document.createElement('p');
+    p.classList.add('py-5')
+    p.innerText = 'Discount:';
+    const p1 = document.createElement('p');
+    p1.innerText = `
+    -${totalPrice-parseFloat(grandPrice)}
+    `;
+    discountCountainer.appendChild(p);
+    discountCountainer.appendChild(p1);
+
 });
