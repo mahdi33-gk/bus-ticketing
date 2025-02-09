@@ -1,53 +1,60 @@
+let selectedSeat = [0];
 function allInOne(event) {
-  document.getElementById("noSeatText").classList.add("hidden");
-  const priceAddSection = document.getElementById("seatAdd");
-  const cuponApplyBtn = document.getElementById("cupon-appy-btn");
-  let priceContainer = document.getElementById("price-container");
-  priceContainer.classList.add("flex", "items-center", "flex-col");
+  if (selectedSeat.includes(event.innerText)) {
+    return alert("Already added.");
+  } else if (selectedSeat.length < 5) {
+    document.getElementById("noSeatText").classList.add("hidden");
+    const priceAddSection = document.getElementById("seatAdd");
+    const cuponApplyBtn = document.getElementById("cupon-appy-btn");
+    let priceContainer = document.getElementById("price-container");
+    priceContainer.classList.add("flex", "items-center", "flex-col");
 
-  let li = document.createElement("li");
-  li.classList.add("flex", "justify-between", "w-full");
+    let li = document.createElement("li");
+    li.classList.add("flex", "justify-between", "w-full");
 
-  li.innerHTML = `
+    li.innerHTML = `
     <span> ${event.innerText}</span>
     <span>Economy</span>
     <span>550</span>
     `;
 
-  priceContainer.appendChild(li);
+    priceContainer.appendChild(li);
 
-  event.classList.add("bg-secondary", "text-white");
-  const oldAvailableSeat = parseFloat(
-    document.getElementById("main-seats").innerText
-  );
-  const oldBookedSeat = parseFloat(
-    document.getElementById("booked-seat").innerText
-  );
+    event.classList.add("bg-secondary", "text-white");
+    const oldAvailableSeat = parseFloat(
+      document.getElementById("main-seats").innerText
+    );
+    const oldBookedSeat = parseFloat(
+      document.getElementById("booked-seat").innerText
+    );
 
-  const availableSeat = oldAvailableSeat - 1;
-  document.getElementById("main-seats").innerText = availableSeat;
+    const availableSeat = oldAvailableSeat - 1;
+    document.getElementById("main-seats").innerText = availableSeat;
 
-  let bookedSeat = oldBookedSeat + 1;
-  document.getElementById("booked-seat").innerText = bookedSeat;
+    let bookedSeat = oldBookedSeat + 1;
+    document.getElementById("booked-seat").innerText = bookedSeat;
 
-  // price show section
-  document.getElementById("total-price").innerText = 550 * bookedSeat;
-  
-  if(bookedSeat>3){
-    cuponApplyBtn.removeAttribute('disabled');
+    // price show section
+    document.getElementById("total-price").innerText = 550 * bookedSeat;
+
+    if (bookedSeat > 3) {
+      cuponApplyBtn.removeAttribute("disabled");
+    }
   }
- 
+  else{
+    return alert('You added maximum seats.');
+  }
 
- 
+  selectedSeat.push(event.innerText);
 }
- // cupon Appy section
+// cupon Appy section
 // let totalPrice = parseFloat(document.getElementById("total-price").innerText);
 // document
 // .getElementById("cupon-input")
 // .addEventListener('keyup', function (event) {
 //   let grandPrice = document.getElementById("after-cupon-price");
 //   let cuponInput = document.getElementById('cupon-input').value;
-  
+
 //   const cuponApplyBtn = document.getElementById("cupon-appy-btn");
 //   if (cuponInput === "NEW15") {
 //     cuponApplyBtn.removeAttribute("disabled");
