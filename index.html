@@ -21,6 +21,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/288dc013f9.js" crossorigin="anonymous"></script>
@@ -42,11 +47,13 @@
                         btnBg: 'rgba(3, 7, 18, 0.05)',
                         textCl: 'rgba(3, 7, 18, 0.5)',
                         footertextCl: 'rgba(255, 255, 255, 0.7)',
+                        modalColor: 'rgb(39, 174, 96)',
 
                     },
                     fontFamily: {
                         railway: 'Raleway',
-                        inter: 'Inter'
+                        inter: 'Inter',
+                        roboto: 'Roboto'
                     },
                 },
             },
@@ -443,13 +450,16 @@
                                     <!-- Open the modal using ID.showModal() method -->
                                     <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
                                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                                        <div class="modal-box">
-                                            <h3 class="text-lg font-bold">Hello!</h3>
-                                            <p class="py-4">Press ESC key or click the button below to close</p>
+                                        <div class="modal-box flex justify-center items-center flex-col font-roboto py-4">
+                                            <img class="py-3" src="./images/success.png" alt="">
+                                            <h3 class=" font-bold text-2xl text-modalColor">SUCCESS</h3>
+                                            <p class="py-3 text-center font-bold">Thank you for Booking Our Bus Seats. <br>
+                                                We are working hard to find the best service and deals for you. </p>
+                                            <p class="py-3">Shortly you will find confirmation in your email.</p>
                                             <div class="modal-action">
                                                 <form method="dialog">
                                                     <!-- if there is a button in form, it will close the modal -->
-                                                    <button class="btn">Close</button>
+                                                    <button class="btn btn-lg rounded-full bg-modalColor px-12 py-1 text-white">Close</button>
                                                 </form>
                                             </div>
                                         </div>
@@ -482,7 +492,8 @@
             <div>
                 <h1 class="text-white text-4xl font-bold">O-ticket</h1>
                 <p class="text-footertextCl text-[14px] mt-4 font-inter">P-Ticket is a digital platform to make your
-                    <br> daily commuting better.</p>
+                    <br> daily commuting better.
+                </p>
             </div>
             <div>
                 <h1 class="font-railway text-white text-[17px]">Download our app</h1>
