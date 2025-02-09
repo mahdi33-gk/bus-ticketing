@@ -1,10 +1,11 @@
-let totalPrice = document.getElementById("total-price");
+
 let grandPrice = document.getElementById("after-cupon-price");
 
 
 let selectedSeat = [0];
 let grandprice = 0;
 function allInOne(event) {
+    let totalPrice = parseFloat(document.getElementById("total-price").innerText);
   if (selectedSeat.includes(event.innerText)) {
     return alert("Already added.");
   } else if (selectedSeat.length < 5) {
@@ -56,16 +57,17 @@ function allInOne(event) {
 }
 // cupon Appy section
 document.getElementById("cupon-apply-btn").addEventListener('click', function () {
+    let totalPrice = parseFloat(document.getElementById("total-price").innerText);
     let cuponInput = document.getElementById('cupon-input').value;
     if(cuponInput !== 'NEW15' && cuponInput !== 'Couple15'){
         return alert('its not a valid cupon.');
     }
     if(cuponInput === 'NEW15'){
-        grandprice = totalPrice * .15;
+        grandprice = totalPrice - totalPrice * .15;
 
     }
     else if(cuponInput === 'Couple15'){
-        grandprice = totalPrice * 20;
+        grandprice = totalPrice - totalPrice * .20;
     }
-    grandPrice.innerText = grandprice;
+    grandPrice.innerText = grandprice.toFixed(2);
 });
