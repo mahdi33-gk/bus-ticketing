@@ -92,9 +92,11 @@ document
 
     
   })
-  document.getElementById('input-number').addEventListener('keyup', function(){
-    const passengerEmail = document.getElementById('input-email').value;
-    if(passengerPhone.length === '01834393787'){
+  document.getElementById('phone-number').addEventListener('input', function(event){
+    
+    const passengerPhone = event.target.value;
+    let nextBtn = document.getElementById('next-btn');
+    if(passengerPhone.length === 11 ){
       nextBtn.removeAttribute('disabled');
     }
   })
