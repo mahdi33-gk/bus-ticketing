@@ -82,16 +82,6 @@ document
 
 
   // next btn functionality
-  document.getElementById('next-btn').addEventListener('click', function(){
-    const passengerPhone = document.getElementById('phone-number').value;
-    const passengerName = document.getElementById('input-name').value;
-    const passengerEmail = document.getElementById('input-email').value;
-    let nextBtn = document.getElementById('next-btn');
-
-   
-
-    
-  })
   document.getElementById('phone-number').addEventListener('input', function(event){
     
     const passengerPhone = event.target.value;
@@ -102,4 +92,8 @@ document
     else{
       nextBtn.setAttribute('disabled', true);
     }
+  })
+
+  document.getElementById('continue').addEventListener('click', function (){
+    window.location.reload();
   })
