@@ -99,4 +99,7 @@ document
     if(passengerPhone.length === 11 ){
       nextBtn.removeAttribute('disabled');
     }
+    else{
+      nextBtn.setAttribute('disabled', true);
+    }
   })
