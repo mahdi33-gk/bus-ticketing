@@ -79,3 +79,7 @@ document
     <p>-BDT: <span>${totalPrice-grandprice}</span></p>
     `;
   });
+
+  document.getElementById('next-btn').addEventListener('click', function(){
+    
+  })

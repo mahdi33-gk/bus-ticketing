@@ -442,17 +442,17 @@
                             </div>
                             <div>
                                 <div>
-                                    <h1 class="text-lg font-medium mb-1">Passenger Name*</h1>
+                                    <h1 id="input-name" class="text-lg font-medium mb-1">Passenger Name*</h1>
                                     <input placeholder="Type Name"
                                         class="w-full border-2 mb-3 border-textBg rounded-md p-3" type="text">
-                                    <h1 class="text-lg font-medium mb-1">Phone Number*</h1>
+                                    <h1 id="phone-number" class="text-lg font-medium mb-1">Phone Number*</h1>
                                     <input placeholder="Your Phone Number"
                                         class="w-full border-2 mb-3 border-textBg rounded-md p-3" required type="text">
                                     <h1 class="text-lg font-medium mb-1">Email ID</h1>
-                                    <input class="w-full border-2 border-textBg rounded-md p-3 mb-3"
+                                    <input id="input-email" class="w-full border-2 border-textBg rounded-md p-3 mb-3"
                                         placeholder="Your Email" type="email">
 
-                                    <button onclick="my_modal_5.showModal()" class="btn w-full mt-3 bg-secondary text-white">Next</button>
+                                    <button disabled id="next-btn" onclick="my_modal_5.showModal()" class="btn w-full mt-3 bg-secondary text-white">Next</button>
                                     <!-- Open the modal using ID.showModal() method -->
                                     
                                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
