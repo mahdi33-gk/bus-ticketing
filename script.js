@@ -80,8 +80,21 @@ document
     `;
   });
 
+
+  // next btn functionality
   document.getElementById('next-btn').addEventListener('click', function(){
     const passengerPhone = document.getElementById('phone-number').value;
     const passengerName = document.getElementById('input-name').value;
     const passengerEmail = document.getElementById('input-email').value;
+    let nextBtn = document.getElementById('next-btn');
+
+   
+
+    
+  })
+  document.getElementById('input-number').addEventListener('keyup', function(){
+    const passengerEmail = document.getElementById('input-email').value;
+    if(passengerPhone.length === '01834393787'){
+      nextBtn.removeAttribute('disabled');
+    }
   })
