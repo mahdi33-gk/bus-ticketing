@@ -81,5 +81,7 @@ document
   });
 
   document.getElementById('next-btn').addEventListener('click', function(){
-    
+    const passengerPhone = document.getElementById('phone-number').value;
+    const passengerName = document.getElementById('input-name').value;
+    const passengerEmail = document.getElementById('input-email').value;
   })
